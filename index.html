@@ -2590,7 +2590,9 @@
 
         setTimeout(() => {
             $('.filter__item-list li label, .filter__type-list li label').on('click', function () {
-                window.location.reload()
+                setTimeout(() => {
+                    window.location.reload()
+                }, 1000)
             })
         }, 2000)
     </script>
