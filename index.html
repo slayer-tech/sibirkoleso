@@ -2588,9 +2588,8 @@
             $('.brands').slick('slickNext')
         })
 
-        setInterval(() => {
-            $('.filter__item-list li label').on('click', function () {
-                console.log(123)
+        setTimeout(() => {
+            $('.filter__item-list li label, .filter__type-list li label').on('click', function () {
                 window.location.reload()
             }, 2000)
         })
