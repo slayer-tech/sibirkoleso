@@ -21,7 +21,7 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__left">
-                <a class="header__logo" href="/">
+                <a class="header__logo" href="/sibirkoleso/">
                     <img alt="" src="img/logo.svg">
                     Сибирь Колесо
                 </a>
@@ -2586,6 +2586,10 @@
 
         $('.brand__nav-item_next').on('click', function () {
             $('.brands').slick('slickNext')
+        })
+
+        $('.filter__item-list li').on('click', function () {
+            window.location.reload()
         })
     </script>
 </body>
