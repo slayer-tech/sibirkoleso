@@ -185,7 +185,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                             selector.off("click")
                             selector = $('.filter .row:not(.cars) input[type="radio"]:not(:checked)+label, .filter .row:not(.cars) input[type="checkbox"]+label')
                             selector.on("click", func(selector, inputName, catalogBlock, filterType))
-                        }, 500)
+                        }, 1500)
 
                         let parameters = "/"
 
@@ -319,7 +319,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                             selector.off("click")
                             selector = $('.filter .row:not(.cars) input[type="radio"]:not(:checked)+label, .filter .row:not(.cars) input[type="checkbox"]+label')
                             selector.on("click", func(selector, inputName, catalogBlock, filterType))
-                        }, 1500)
+                        }, 500)
 
                         let parameters = "/"
 
