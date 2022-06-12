@@ -674,37 +674,37 @@
 
         (async function() {
             await $.ajax({
-                url: "porting.json",
+                url: "/sibirkoleso/porting.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.porting'), 'porting')
                 }
             })
             await $.ajax({
-                url: "diameters.json",
+                url: "/sibirkoleso/diameters.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.diameter'), 'diameter')
                 }
             })
             await $.ajax({
-                url: "width-wheel.json",
+                url: "/sibirkoleso/width-wheel.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.width'), 'width')
                 }
             })
             await $.ajax({
-                url: "gab.json",
+                url: "/sibirkoleso/gab.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.gab'), 'gab')
                 }
             })
             await $.ajax({
-                url: "dia.json",
+                url: "/sibirkoleso/dia.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.dia'), 'dia')
                 }
             })
             await $.ajax({
-                url: "brand-wheel.json",
+                url: "/sibirkoleso/brand-wheel.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.brand'), 'brand')
                 }
@@ -715,7 +715,7 @@
 
         (async function() {
             await $.ajax({
-                url: "wheels.json",
+                url: "/sibirkoleso/wheels.json",
                 success: (data) => {
                     data.forEach((d) => {
                         fillCatalog(d)

@@ -55,7 +55,7 @@ function func(selector, inputName, catalogBlock, filterType) {
 
             if (filterType == 'wheels') {
                 $.ajax({
-                    url: 'wheels.json',
+                    url: '/sibirkoleso/wheels.json',
                     success: (data) => {
                         let porting = new Set()
                         let diameter = new Set()
@@ -77,42 +77,42 @@ function func(selector, inputName, catalogBlock, filterType) {
 
                         if (empty) {
                             $.ajax({
-                                url: "../porting.json",
+                                url: "/sibirkoleso//sibirkoleso/porting.json",
                                 success: data => {
                                     $(".filter__item-list.porting").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.porting'), 'porting')
                                 }
                             })
                             $.ajax({
-                                url: "../diameters.json",
+                                url: "/sibirkoleso//sibirkoleso/diameters.json",
                                 success: data => {
                                     $(".filter__item-list.diameter").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.diameter'), 'diameter')
                                 }
                             })
                             $.ajax({
-                                url: "../width-wheel.json",
+                                url: "/sibirkoleso//sibirkoleso/width-wheel.json",
                                 success: data => {
                                     $(".filter__item-list.width").html("")
                                     fillFilterItem(data.sort(), $('.row.wheels .filter__item-list.width'), 'width')
                                 }
                             })
                             $.ajax({
-                                url: "../gab.json",
+                                url: "/sibirkoleso//sibirkoleso/gab.json",
                                 success: data => {
                                     $(".filter__item-list.gab").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.gab'), 'gab')
                                 }
                             })
                             $.ajax({
-                                url: "../dia.json",
+                                url: "/sibirkoleso//sibirkoleso/dia.json",
                                 success: data => {
                                     $(".filter__item-list.dia").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.dia'), 'dia')
                                 }
                             })
                             $.ajax({
-                                url: "../brand-wheel.json",
+                                url: "/sibirkoleso//sibirkoleso/brand-wheel.json",
                                 success: data => {
                                     $(".filter__item-list.brand").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.brand'), 'brand')
@@ -246,7 +246,7 @@ function func(selector, inputName, catalogBlock, filterType) {
             }
             else {
                 $.ajax({
-                    url: 'data.json',
+                    url: '/sibirkoleso//sibirkoleso/data.json',
                     success: (data) => {
                         let width = new Set()
                         let height = new Set()

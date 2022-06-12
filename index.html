@@ -2475,25 +2475,25 @@
 
     (async function() {
         await $.ajax({
-            url: "width.json",
+            url: "/sibirkoleso/width.json",
             success: (data) => {
                 fillFilterItem(data, $('.row.tyres .filter__item-list.width'), 'width')
             }
         })
         await $.ajax({
-            url: "height.json",
+            url: "/sibirkoleso/height.json",
             success: (data) => {
                 fillFilterItem(data, $('.row.tyres .filter__item-list.height'), 'height')
             }
         })
         await $.ajax({
-            url: "diameters.json",
+            url: "/sibirkoleso/diameters.json",
             success: (data) => {
                 fillFilterItem(data, $('.row.tyres .filter__item-list.diameter'), 'diameter')
             }
         })
         await $.ajax({
-            url: "brands.json",
+            url: "/sibirkoleso/brands.json",
             success: (data) => {
                 fillFilterItem(data, $('.row.tyres .filter__item-list.brand'), 'brand')
             }
@@ -2504,7 +2504,7 @@
 
     (async function() {
         await $.ajax({
-            url: "data.json",
+            url: "/sibirkoleso/data.json",
             success: (data) => {
                 data.forEach((d) => {
                     if (d.season == 1 && d.type == 1) {

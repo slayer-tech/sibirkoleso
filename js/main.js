@@ -104,7 +104,7 @@ $(document).ready(function() {
             let order = catalogIcon.attr("class").split(/\s+/)[1]
 
             // $.ajax({
-            //     url: "data.json",
+            //     url: "/sibirkoleso/data.json",
             //     data: {"order" : order}
             //     success: (data) => {
             //
