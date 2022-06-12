@@ -674,37 +674,37 @@
 
         (async function() {
             await $.ajax({
-                url: "/porting.json",
+                url: "porting.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.porting'), 'porting')
                 }
             })
             await $.ajax({
-                url: "/diameters.json",
+                url: "diameters.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.diameter'), 'diameter')
                 }
             })
             await $.ajax({
-                url: "/width-wheel.json",
+                url: "width-wheel.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.width'), 'width')
                 }
             })
             await $.ajax({
-                url: "/gab.json",
+                url: "gab.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.gab'), 'gab')
                 }
             })
             await $.ajax({
-                url: "/dia.json",
+                url: "dia.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.dia'), 'dia')
                 }
             })
             await $.ajax({
-                url: "/brand-wheel.json",
+                url: "brand-wheel.json",
                 success: (data) => {
                     fillFilterItem(data, $('.row.wheels .filter__item-list.brand'), 'brand')
                 }
@@ -715,7 +715,7 @@
 
         (async function() {
             await $.ajax({
-                url: "/wheels.json",
+                url: "wheels.json",
                 success: (data) => {
                     data.forEach((d) => {
                         fillCatalog(d)

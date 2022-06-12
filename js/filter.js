@@ -77,42 +77,42 @@ function func(selector, inputName, catalogBlock, filterType) {
 
                         if (empty) {
                             $.ajax({
-                                url: "/porting.json",
+                                url: "../porting.json",
                                 success: data => {
                                     $(".filter__item-list.porting").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.porting'), 'porting')
                                 }
                             })
                             $.ajax({
-                                url: "/diameters.json",
+                                url: "../diameters.json",
                                 success: data => {
                                     $(".filter__item-list.diameter").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.diameter'), 'diameter')
                                 }
                             })
                             $.ajax({
-                                url: "/width-wheel.json",
+                                url: "../width-wheel.json",
                                 success: data => {
                                     $(".filter__item-list.width").html("")
                                     fillFilterItem(data.sort(), $('.row.wheels .filter__item-list.width'), 'width')
                                 }
                             })
                             $.ajax({
-                                url: "/gab.json",
+                                url: "../gab.json",
                                 success: data => {
                                     $(".filter__item-list.gab").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.gab'), 'gab')
                                 }
                             })
                             $.ajax({
-                                url: "/dia.json",
+                                url: "../dia.json",
                                 success: data => {
                                     $(".filter__item-list.dia").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.dia'), 'dia')
                                 }
                             })
                             $.ajax({
-                                url: "/brand-wheel.json",
+                                url: "../brand-wheel.json",
                                 success: data => {
                                     $(".filter__item-list.brand").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.brand'), 'brand')
