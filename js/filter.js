@@ -55,7 +55,7 @@ function func(selector, inputName, catalogBlock, filterType) {
 
             if (filterType == 'wheels') {
                 $.ajax({
-                    url: '/wheels.json',
+                    url: 'wheels.json',
                     success: (data) => {
                         let porting = new Set()
                         let diameter = new Set()
@@ -246,7 +246,7 @@ function func(selector, inputName, catalogBlock, filterType) {
             }
             else {
                 $.ajax({
-                    url: '/data.json',
+                    url: 'data.json',
                     success: (data) => {
                         let width = new Set()
                         let height = new Set()

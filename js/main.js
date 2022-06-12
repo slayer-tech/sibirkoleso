@@ -57,7 +57,7 @@ $(document).ready(function() {
     $('.filter__type-list label').on('click', function() {
         filterTitle.html(
             $(this).text() +
-            "<img alt=\"\" class=\"filter__type-img\" src=\"/img/arrow.svg\">"
+            "<img alt=\"\" class=\"filter__type-img\" src=\"img/arrow.svg\">"
         )
         if(filterTitle.text() != 'Легковые авто') {
             filterSeasons.find(".row").removeClass('active')
