@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" rel="stylesheet">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__left">
+                <a class="header__logo" href="/">
+                    <img alt="" src="/img/logo.svg">
+                    Сибирь Колесо
+                </a>
+                <div class="header__separate"></div>
+                <div class="header__menu-button header__button">
+                    <div class="header__menu-button-icon header__icon">
+                        <div></div>
+                        <div></div>
+                        <div class="last"></div>
+                        <span class="header__menu-button-close"></span>
+                    </div>
+                    <span class="header__title">Меню</span>
+                </div>
+            </div>
+
+
+            <a class="header__stores" href="/stores/">
+                <svg xmlns="http://www.w3.org/2000/svg" id="stores" width="10px" height="16px" viewBox="0 0 10 16"
+                     version="1.1">
+                    <g class="header__stores-icon header__icon" id="Page-1" stroke="none" stroke-width="1">
+                        <g id="720" transform="translate(-382.000000, -36.000000)" fill-rule="nonzero">
+                            <g id="Header" transform="translate(50.000000, 28.000000)">
+                                <path
+                                        d="M340,8 C341.104569,8 342,8.8954305 342,10 L342,22 C342,23.1045695 341.104569,24 340,24 L334,24 C332.895431,24 332,23.1045695 332,22 L332,10 C332,8.8954305 332.895431,8 334,8 L340,8 Z M340,9 L334,9 C333.447715,9 333,9.44771525 333,10 L333,22 C333,22.5522847 333.447715,23 334,23 L340,23 C340.552285,23 341,22.5522847 341,22 L341,10 C341,9.44771525 340.552285,9 340,9 Z M337,20 C337.552285,20 338,20.4477153 338,21 C338,21.5522847 337.552285,22 337,22 C336.447715,22 336,21.5522847 336,21 C336,20.4477153 336.447715,20 337,20 Z M338.5,10 C338.776142,10 339,10.2238576 339,10.5 C339,10.7761424 338.776142,11 338.5,11 L335.5,11 C335.223858,11 335,10.7761424 335,10.5 C335,10.2238576 335.223858,10 335.5,10 L338.5,10 Z"
+                                        id="Rectangle" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <span class="header__stores-title header__title">Магазины</span>
+            </a>
+
+            <div class="header__right">
+                <a class="header__location" href="/locations/">
+                    <svg class="header__location-icon header__icon" fill="gray" xmlns="http://www.w3.org/2000/svg"
+                         width="12px" height="16px" viewBox="0 0 12 16">
+                        <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="1140" transform="translate(-895.000000, -36.000000)">
+                                <g id="Header" transform="translate(50.000000, 28.000000)">
+                                    <path
+                                            d="M851,24 C851,24 845,18.001 845,14 C845,10.686 847.686,8 851,8 C854.314,8 857,10.686 857,14 C857,18.001 851,24 851,24 Z M851,9 C848.239,9 846,11.239 846,14 C846,17.011 851,22.5 851,22.5 C851,22.5 856,17.011 856,14 C856,11.239 853.761,9 851,9 Z M851,14 C850.448,14 850,13.552 850,13 C850,12.448 850.448,12 851,12 C851.552,12 852,12.448 852,13 C852,13.552 851.552,14 851,14 Z"
+                                            id="Shape" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <span class="header__location-title header__title">Москва</span>
+                </a>
+                <div class="header__separate"></div>
+                <a class="header__cart">
+                        <span title="Ваша корзина пуста">
+                            <svg class="header__cart-icon header__icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                 height="16" viewBox="0 0 16 16">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill-rule: evenodd;
+                                        }
+                                    </style>
+                                </defs>
+                                <path id="Cart" class="cls-1"
+                                      d="M169,60h6a1.033,1.033,0,0,1,1,1v3h3l1,11a1.011,1.011,0,0,1-1,1H165a0.969,0.969,0,0,1-1-1l1-11h3V61A0.963,0.963,0,0,1,169,60Zm-3,5h2v1h1V65h6v1h1V65h2l1,9a1.082,1.082,0,0,1-1,1H166a0.991,0.991,0,0,1-1-1Zm3-4h6v3h-6V61Z"
+                                      transform="translate(-164 -60)" />
+                            </svg>
+                            <span class="count">1</span>
+                        </span>
+                </a>
+                <div class="header__profile">
+                    <a class="header__profile-link header__link" href="/auth/" rel="nofollow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" fill="#1a1a1a"
+                             viewBox="0 0 7.2 7.7">
+                            <path
+                                    d="M3.6 4.3c-1.2 0-2.2-1-2.2-2.2C1.4 1 2.4 0 3.6 0s2.2 1 2.2 2.2c0 1.2-1 2.1-2.2 2.1zm0-.5c.9 0 1.7-.8 1.7-1.7S4.5.5 3.6.5s-1.7.7-1.7 1.7.8 1.6 1.7 1.6" />
+                            <path
+                                    d="M.5 7.4H0c0-2 1.6-3.6 3.6-3.6s3.6 1.6 3.6 3.6h-.5c0-1.7-1.4-3.1-3.1-3.1S.5 5.7.5 7.4" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="main-menu-popup">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-6 a-menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item__name">
+                            <a href="/tyres/">
+                                <svg class="menu-item__image--tires" xmlns="http://www.w3.org/2000/svg" id="tyre"
+                                     width="39.938" height="39.938" viewBox="0 0 39.938 39.938">
+                                    <path class="tyre"
+                                          d="M375.98,66.726L374.706,68l1.261,1.262a19.833,19.833,0,0,1-2.02,7.623l-1.747.468,0.464,1.735a20.188,20.188,0,0,1-5.59,5.573l-1.721-.461-0.464,1.733a19.954,19.954,0,0,1-7.617,2.046L356,86.706l-1.272,1.272A19.812,19.812,0,0,1,347.1,85.9l-0.455-1.7-1.69.453a20.135,20.135,0,0,1-5.619-5.575l0.462-1.725-1.722-.462a19.886,19.886,0,0,1-2.058-7.617L337.294,68l-1.261-1.262a19.834,19.834,0,0,1,2.02-7.623l1.747-.468-0.464-1.735a20.187,20.187,0,0,1,5.59-5.573l1.721,0.461,0.464-1.732a19.956,19.956,0,0,1,7.617-2.046L356,49.294l1.272-1.272A19.814,19.814,0,0,1,364.9,50.1l0.455,1.7,1.69-.453a20.135,20.135,0,0,1,5.619,5.575L372.2,58.647l1.722,0.462A19.886,19.886,0,0,1,375.98,66.726Zm-3.825-6.74-1.553-.416,0.417-1.555a18.136,18.136,0,0,0-5.065-5.025l-1.523.408-0.41-1.53a17.863,17.863,0,0,0-6.875-1.876L356,51.139l-1.147-1.146a17.982,17.982,0,0,0-6.865,1.844L347.569,53.4l-1.551-.416a18.191,18.191,0,0,0-5.039,5.024l0.419,1.564-1.576.422A17.878,17.878,0,0,0,338,66.863L339.139,68l-1.149,1.149a17.928,17.928,0,0,0,1.855,6.866l1.553,0.416-0.417,1.555a18.147,18.147,0,0,0,5.064,5.025l1.524-.408,0.41,1.53a17.863,17.863,0,0,0,6.874,1.876L356,84.861l1.146,1.147a17.982,17.982,0,0,0,6.866-1.844l0.419-1.562,1.551,0.416a18.191,18.191,0,0,0,5.039-5.024L370.6,76.431l1.576-.422A17.878,17.878,0,0,0,374,69.137L372.861,68l1.149-1.149A17.929,17.929,0,0,0,372.155,59.985ZM356,81a13,13,0,1,1,13-13A13,13,0,0,1,356,81Zm0-24a11,11,0,1,0,11,11A11,11,0,0,0,356,57Zm0,20a9,9,0,1,1,9-9A9,9,0,0,1,356,77Zm0-16a7,7,0,1,0,7,7A7,7,0,0,0,356,61Z"
+                                          transform="translate(-336.031 -48.031)" />
+                                </svg>
+                                Шины
+                            </a>
+                        </div>
+                        <div class="menu-item__desc">25 098 моделей</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 a-menu-column">
+                    <div class="menu-item">
+                        <div class="menu-item__name"><a href="/wheels/">
+                            <svg class="menu-item__image--tires" xmlns="http://www.w3.org/2000/svg" id="wheel"
+                                 width="40" height="40" viewBox="0 0 40 40">
+                                <path class="wheel"
+                                      d="M406,88a20,20,0,1,1,20-20A20,20,0,0,1,406,88Zm0-38a18,18,0,1,0,18,18A18,18,0,0,0,406,50Zm13.959,15.4c-2.4,1.387-7.825,3.514-9.89-.064s2.587-7.267,4.89-8.6C418.9,54.468,423.968,63.087,419.959,65.4Zm-4.887-6.416c-1.343.775-4.094,3.149-2.934,5.158s4.533,0.847,5.934.038C420.72,62.653,417.773,57.426,415.072,58.986Zm-9.072,4c-4.132,0-5-5.875-5-8.533,0-4.547,10-4.63,10,0C411,57.23,410.132,62.989,406,62.989Zm-3-7.509c0,1.551.681,5.12,3,5.12s3-3.5,3-5.12C409,52.422,403,52.361,403,55.48Zm-1.069,9.859c-2.065,3.578-7.587,1.393-9.89.063-3.937-2.273.991-10.975,5-8.66C399.443,58.129,404,61.76,401.931,65.338Zm-5-6.353c-2.648-1.529-5.7,3.637-3,5.2,1.343,0.776,4.774,1.971,5.934-.038S398.329,59.795,396.928,58.986Zm-4.957,11.028c2.346-1.354,7.651-3.414,9.717.163s-2.468,7.2-4.717,8.5C393.126,80.894,388.056,72.274,391.971,70.014Zm4.866,6.428c1.312-.757,3.99-3.089,2.83-5.1s-4.462-.888-5.83-0.1C391.251,72.739,394.2,77.965,396.837,76.442ZM406,71a3,3,0,1,1,3-3A3,3,0,0,1,406,71Zm0-4a1,1,0,1,0,1,1A1,1,0,0,0,406,67Zm0,5.667c4.132,0,5,5.737,5,8.333,0,4.44-10,4.521-10,0C401,78.291,401.868,72.667,406,72.667ZM409,80c0-1.514-.681-5-3-5s-3,3.42-3,5C403,82.986,409,83.046,409,80Zm1.312-9.823c2.066-3.578,7.468-1.462,9.717-.163,3.845,2.22-1.085,10.921-5,8.66C412.683,77.32,408.246,73.755,410.312,70.177Zm4.851,6.265c2.586,1.493,5.638-3.673,3-5.2-1.312-.757-4.67-1.911-5.83.1S413.8,75.652,415.163,76.442Z"
+                                      transform="translate(-386 -48)" />
+                            </svg>
+                            Диски
+                        </a></div>
+                        <div class="menu-item__desc">21 539 моделей</div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-12 a-menu-column">
+                    <div class="menu-block__seporator"></div>
+                </div>
+                <div class="offset-md-4 col-md-3 col-12 a-menu-column">
+                    <div class="header-location-city-phone text-md-end">
+                        <div class="header-location-city-phone__title">Единая справочная</div>
+                        <div class="header-location-city-phone__phone"><a href="tel:88007751050">8 800 775-10-50</a>
+                        </div>
+                        <div class="header-location-city-phone__mobile"><a href="tel:+79502666657">7
+                            950-266-6657</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+
+
+<section class="filter">
+    <div class="filter__tabs">
+        <div class="filter__tab filter__tab_active">Шины</div>
+        <div class="filter__tab">Диски</div>
+        <div class="filter__tab-cursor filter__tab-cursor_tyres"></div>
+    </div>
+    <div class="filter__panel">
+        <div class="filter__header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8">
+                        <div class="filter__sub-tabs">
+                            <div class="filter__sub-tab params filter__sub-tab_active">
+                                <svg class="filter__icon" height="20" width="19" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M17 9.949V20h-1V9.949a2.5 2.5 0 010-4.9V0h1v5.05a2.5 2.5 0 010 4.899zM16.5 6A1.5 1.5 0 1018 7.5 1.5 1.5 0 0016.5 6zM10 15.95V20H9v-4.05a2.5 2.5 0 010-4.9V0h1v11.05a2.5 2.5 0 010 4.9zM9.5 12a1.5 1.5 0 101.5 1.5A1.5 1.5 0 009.5 12zM3 9.949V20H2V9.949a2.5 2.5 0 010-4.9V0h1v5.05a2.5 2.5 0 010 4.899zM2.5 6A1.5 1.5 0 104 7.5 1.5 1.5 0 002.5 6z"
+                                            data-name="Ellipse 5 copy 2" fill-rule="evenodd" />
+                                </svg>
+                                <span>По параметрам</span>
+                            </div>
+                            <div class="filter__sub-tab cars">
+                                <svg class="filter__icon" height="19" viewBox="0 0 9.6 9.1" width="20"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                            d="M8.6 7.7H1c-.8 0-1-.7-1-1.5V4.8c0-.8.2-1.4 1-1.4h7.7c.8 0 1 .6 1 1.4v1.4c-.1.8-.3 1.5-1.1 1.5zm0-.5c.2 0 .5 0 .5-1V4.8c0-1-.3-1-.5-1H1c-.2 0-.5 0-.5 1v1.4c0 1 .3 1 .5 1h7.6" />
+                                    <path
+                                            d="M1.9 7.7h.5v.5c0 .5-.4 1-1 1-.5 0-1-.4-1-1v-.5H1v.5c0 .3.2.5.5.5s.5-.2.5-.5v-.5M8.6 7.7h.5v.5c0 .5-.4 1-1 1s-1-.4-1-1v-.5h.5v.5c0 .3.2.5.5.5s.5-.2.5-.5v-.5M1.4 3.5L1 3.4l.5-1.9S1.7.1 2.5.1h4.8c.8 0 1 1.4 1 1.4l.5 1.9-.6.1-.5-1.9c0-.4-.3-1-.5-1H2.4c-.2 0-.4.6-.5 1l-.5 1.9M7.4 6.2c-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7.4 0 .7.3.7.7.1.4-.3.7-.7.7zm0-.4c.1 0 .2-.1.2-.2s0-.3-.2-.3c-.1 0-.2.1-.2.2s.1.3.2.3M2.2 6.2c-.4 0-.7-.3-.7-.7 0-.4.3-.7.7-.7.4 0 .7.3.7.7 0 .4-.3.7-.7.7zm0-.4c.1 0 .2-.1.2-.2s-.1-.3-.2-.3c-.2 0-.3.1-.3.2s.1.3.3.3" />
+                                </svg>
+                                По автомобилям
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 filter__separate">
+                        <div class="filter__type float-sm-start float-md-end">
+                            <div class="filter__type-title">
+                                Легковые авто
+                                <img alt="" class="filter__type-img" src="/img/arrow.svg">
+                            </div>
+                            <ul class="filter__type-list">
+                                <li>
+                                    <input checked name="type" id="11658" type="radio" value="11658">
+                                    <label class="icon-car" for="11658" title="Легковые авто">Легковые авто</label>
+                                </li>
+                                <li>
+                                    <input name="type" id="11659" type="radio" value="11659">
+                                    <label class="icon-truck" for="11659" title="Грузовые авто">Грузовые
+                                        авто</label>
+                                </li>
+                                <li>
+                                    <input name="type" id="11660" type="radio" value="11660">
+                                    <label class="icon-moto" for="11660" title="Мото-квадро">Мото-квадро</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="filter__body">
+            <div class="container">
+                <div class="row params active">
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item params">
+                            <div class="filter__item-title" title="Ширина">
+                                Ширина&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="130" type="checkbox"><label for="130">130</label></li>
+                                <li><input id="131" type="checkbox"><label for="131">131</label></li>
+                                <li><input id="132" type="checkbox"><label for="132">132</label></li>
+                                <li><input id="133" type="checkbox"><label for="133">133</label></li>
+                                <li><input id="134" type="checkbox"><label for="134">134</label></li>
+                                <li><input id="135" type="checkbox"><label for="135">135</label></li>
+                                <li><input id="136" type="checkbox"><label for="136">136</label></li>
+                                <li><input id="137" type="checkbox"><label for="137">137</label></li>
+                                <li><input id="138" type="checkbox"><label for="138">138</label></li>
+                                <li><input id="139" type="checkbox"><label for="139">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item params">
+                            <div class="filter__item-title" title="Высота">
+                                Высота&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="1" type="checkbox"><label for="1">130</label></li>
+                                <li><input id="2" type="checkbox"><label for="2">131</label></li>
+                                <li><input id="3" type="checkbox"><label for="3">132</label></li>
+                                <li><input id="4" type="checkbox"><label for="4">133</label></li>
+                                <li><input id="5" type="checkbox"><label for="5">134</label></li>
+                                <li><input id="6" type="checkbox"><label for="6">135</label></li>
+                                <li><input id="7" type="checkbox"><label for="7">136</label></li>
+                                <li><input id="8" type="checkbox"><label for="8">137</label></li>
+                                <li><input id="9" type="checkbox"><label for="9">138</label></li>
+                                <li><input id="10" type="checkbox"><label for="10">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item params active">
+                            <div class="filter__item-title" title="Диаметр">
+                                Диаметр&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="11" type="checkbox"><label for="11">130</label></li>
+                                <li><input id="12" type="checkbox"><label for="12">131</label></li>
+                                <li><input id="13" type="checkbox"><label for="13">132</label></li>
+                                <li><input id="14" type="checkbox"><label for="14">133</label></li>
+                                <li><input id="15" type="checkbox"><label for="15">134</label></li>
+                                <li><input id="16" type="checkbox"><label for="16">135</label></li>
+                                <li><input id="17" type="checkbox"><label for="17">136</label></li>
+                                <li><input id="18" type="checkbox"><label for="18">137</label></li>
+                                <li><input id="19" type="checkbox"><label for="19">138</label></li>
+                                <li><input id="20" type="checkbox"><label for="20">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item params">
+                            <div class="filter__item-title" title="Производитель">
+                                Производитель&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="21" type="checkbox"><label for="21">130</label></li>
+                                <li><input id="22" type="checkbox"><label for="22">131</label></li>
+                                <li><input id="23" type="checkbox"><label for="23">132</label></li>
+                                <li><input id="24" type="checkbox"><label for="24">133</label></li>
+                                <li><input id="25" type="checkbox"><label for="25">134</label></li>
+                                <li><input id="26" type="checkbox"><label for="26">135</label></li>
+                                <li><input id="27" type="checkbox"><label for="27">136</label></li>
+                                <li><input id="28" type="checkbox"><label for="28">137</label></li>
+                                <li><input id="29" type="checkbox"><label for="29">138</label></li>
+                                <li><input id="30" type="checkbox"><label for="30">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cars">
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item cars cars-1">
+                            <div class="filter__item-title" title="Ширина">
+                                Марка&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="31" name="mark" type="radio"><label for="31">130</label></li>
+                                <li><input id="32" name="mark" type="radio"><label for="32">131</label></li>
+                                <li><input id="33" name="mark" type="radio"><label for="33">132</label></li>
+                                <li><input id="34" name="mark" type="radio"><label for="34">133</label></li>
+                                <li><input id="35" name="mark" type="radio"><label for="35">134</label></li>
+                                <li><input id="36" name="mark" type="radio"><label for="36">135</label></li>
+                                <li><input id="37" name="mark" type="radio"><label for="37">136</label></li>
+                                <li><input id="38" name="mark" type="radio"><label for="38">137</label></li>
+                                <li><input id="39" name="mark" type="radio"><label for="39">138</label></li>
+                                <li><input id="40" name="mark" type="radio"><label for="40">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item cars cars-2 disabled">
+                            <div class="filter__item-title" title="Высота">
+                                Модель&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="130" type="checkbox"><label for="130">130</label></li>
+                                <li><input id="131" type="checkbox"><label for="131">131</label></li>
+                                <li><input id="132" type="checkbox"><label for="132">132</label></li>
+                                <li><input id="133" type="checkbox"><label for="133">133</label></li>
+                                <li><input id="134" type="checkbox"><label for="134">134</label></li>
+                                <li><input id="135" type="checkbox"><label for="135">135</label></li>
+                                <li><input id="136" type="checkbox"><label for="136">136</label></li>
+                                <li><input id="137" type="checkbox"><label for="137">137</label></li>
+                                <li><input id="138" type="checkbox"><label for="138">138</label></li>
+                                <li><input id="139" type="checkbox"><label for="139">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item cars cars-3 disabled">
+                            <div class="filter__item-title" title="Диаметр">
+                                Год выпуска&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="130" type="checkbox"><label for="130">130</label></li>
+                                <li><input id="131" type="checkbox"><label for="131">131</label></li>
+                                <li><input id="132" type="checkbox"><label for="132">132</label></li>
+                                <li><input id="133" type="checkbox"><label for="133">133</label></li>
+                                <li><input id="134" type="checkbox"><label for="134">134</label></li>
+                                <li><input id="135" type="checkbox"><label for="135">135</label></li>
+                                <li><input id="136" type="checkbox"><label for="136">136</label></li>
+                                <li><input id="137" type="checkbox"><label for="137">137</label></li>
+                                <li><input id="138" type="checkbox"><label for="138">138</label></li>
+                                <li><input id="139" type="checkbox"><label for="139">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="filter__item cars cars-4 disabled">
+                            <div class="filter__item-title" title="Производитель">
+                                Модификация&nbsp;
+                            </div>
+                            <ul class="filter__item-list">
+                                <li><input id="130" type="checkbox"><label for="130">130</label></li>
+                                <li><input id="131" type="checkbox"><label for="131">131</label></li>
+                                <li><input id="132" type="checkbox"><label for="132">132</label></li>
+                                <li><input id="133" type="checkbox"><label for="133">133</label></li>
+                                <li><input id="134" type="checkbox"><label for="134">134</label></li>
+                                <li><input id="135" type="checkbox"><label for="135">135</label></li>
+                                <li><input id="136" type="checkbox"><label for="136">136</label></li>
+                                <li><input id="137" type="checkbox"><label for="137">137</label></li>
+                                <li><input id="138" type="checkbox"><label for="138">138</label></li>
+                                <li><input id="139" type="checkbox"><label for="139">139</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filter__seasons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="">
+                            <li class="filter__seasons-item summer">
+                                <input checked id="summer" name="season" type="radio">
+                                <label class="summer" for="summer">
+                                    <svg class="filter__icon filter__icon_summer" height="19" viewBox="0 0 9.1 9.1"
+                                         width="19" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M4.6 6.7c-1.2 0-2.2-1-2.2-2.2s1-2.2 2.2-2.2 2.2 1 2.2 2.2-1 2.2-2.2 2.2zm0-.5c.9 0 1.7-.8 1.7-1.7 0-.9-.8-1.7-1.7-1.7-.9 0-1.7.8-1.7 1.7 0 1 .7 1.7 1.7 1.7M7.6 8L6.3 6.6l.3-.3L8 7.6l-.4.4zM2.5 2.9L1.2 1.5l.3-.3 1.4 1.4-.4.3zm4.1 0l-.3-.4 1.4-1.4.3.4-1.4 1.4zM1.5 8l-.3-.4 1.4-1.4.3.3L1.5 8zm5.7-3.2v-.5h1.9v.5H7.2zM0 4.8v-.5h1.9v.5H0zm4.3 4.3V7.2h.5v1.9h-.5zm0-7.2V0h.5v1.9h-.5z" />
+                                    </svg>
+                                    Летние шины
+                                </label>
+                            </li>
+                            <li class="filter__seasons-item winter">
+                                <input id="winter" name="season" type="radio">
+                                <label for="winter">
+                                    <svg class="filter__icon filter__icon_winter" height="20" viewBox="0 0 9.1 9.6"
+                                         width="19" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M4.6 6.7l-1.7-1V3.8l1.7-1 1.7 1v1.9l-1.7 1zm0-.5l1.2-.7V4.1l-1.2-.7-1.2.7v1.4l1.2.7" />
+                                        <path
+                                                d="M6.6 6.4L6.5 6l2-.5.1.5-2 .4zm.5 1.4l-.5-2 .4-.1.5 2-.4.1zm1.5-.4L6.1 6l.2-.4L8.8 7l-.2.4zM2.1 3.9l-.5-2 .5-.1.5 2-.5.1zm-1.4.3l-.1-.5 2-.5.1.5-2 .5zM2.8 4L.3 2.6l.2-.4L3 3.6l-.2.4zm-.7 3.8l-.5-.1.5-2 .5.1-.5 2zm.4-1.4l-2-.5.1-.5 2 .5-.1.5zm-2 1L.3 7l2.5-1.4.2.4L.5 7.4zm7.9-3.2l-2-.5.1-.5 2 .5-.1.5zM7 3.9l-.5-.2.5-2 .5.1L7 3.9zm-.7.1l-.2-.4 2.5-1.4.2.4L6.3 4zm-.7 4.8L4.2 7.4l.3-.4 1.4 1.4-.3.4zm-2.1 0l-.3-.3L4.6 7l.4.4-1.5 1.4zm.8.8V6.7h.5v2.9h-.5zm.2-7l-.3-.4L5.6.8l.3.3-1.4 1.5zm.1 0L3.2 1.1l.3-.3L5 2.2l-.4.4zm-.3.3V0h.5v2.9h-.5z" />
+                                    </svg>
+                                    Зимние шины
+                                </label>
+                            </li>
+                            <li class="filter__seasons-item thorn">
+                                <input id="thorn" name="thorn" type="checkbox">
+                                <label for="thorn">
+                                    <svg class="filter__icon filter__icon_spike" fill="#fff" height="18"
+                                         viewBox="0 0 9.1 8.6" width="19" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                                d="M8.1 8.6H1c-1 0-1.1-.9-.9-1.3C.4 6.8 3.7.6 3.9.2c.1-.1.4-.2.7-.2.3 0 .6.1.7.3.3.5 3.6 6.7 3.7 7 .3.4.1 1.3-.9 1.3zm0-.4c.2 0 .4-.1.5-.2.1-.1.1-.3 0-.4C8.5 7.4 8 6.3 7.3 5 6.3 3.2 5 .8 4.9.5c0 0-.1-.1-.3-.1h-.3c-.2.4-1.7 3.3-2.8 5.2-.5 1-1 1.8-1 2 0 0 0 .2.1.4 0 0 .1.2.5.2h7" />
+                                        <path
+                                                d="M4.3 6.2V4.3h.5v1.9h-.5zm-1.4 0V4.3h.5v1.9h-.5zm2.9 0V4.3h.5v1.9h-.5zm-2.9.5v-.5h3.4v.5H2.9z" />
+                                    </svg>
+                                    Шипованные шины
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="filter__footer">
+            <button class="filter__button" disabled="disabled" name="set_filter" value="Y">Поиск</button>
+        </div>
+    </div>
+</section>
+
+    <section class="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                    <h2>
+                        <a href="/stocks/">Акции и события</a>
+                    </h2>
+                    <div class="align-items-center justify-content-end d-none d-lg-flex">
+                        Присоединяйтесь к нашим сообществам в социальных сетях:
+                        <a class="ico-vk" href="https://vk.com/sibirkoleso1" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row banners__items">
+                <div class="col-12 col-xl-9 order-1">
+                    <a class="banners__item banner-1 banner-text-white" href="/stocks/zapishis-na-shinomontazh/"
+                        style="background-image: url(/img/tyres.png); background-color: rgb(236, 95, 43);">
+                        <div class="banners__item-title">Запишись на шиномонтаж</div>
+                        <div class="banners__item-text">Уважаемые покупатели! Мы рады представить новую услугу-запись на
+                            шиномонтаж.
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4 col-xl-3 order-5 order-sm-5 order-md-5 order-lg-3 order-xl-2">
+                    <a class="banners__item banner-2 banner-text-white" href="/stocks/tovary-dlya-avto/"
+                        style="background-image: url(/img/banner_2.jpeg); background-color: rgb(115, 115, 115);">
+                        <div class="banners__item-title">Товары для авто</div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-5 order-2 order-xl-3">
+                    <a class="banners__item banner-3" href="/stocks/shinomontazh-v-podarok/"
+                        style="background-image: url(/img/banner_3.png);">
+                        <div class="banners__item-title">Шиномонтаж в подарок</div>
+                        <div class="banners__item-text">Бесплатный шиномонтаж и балансировка при покупке 4 шин с
+                            пометкой «Акция».
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-4 order-4">
+                    <a class="banners__item banner-4" href="/service/#remont-shin-diskov"
+                        style="background-image: url(/img/banner_4.jpg); background-position: right bottom;">
+                        <div class="banners__item-title">Ремонт шин и дисков</div>
+                        <div class="banners__item-text">Профессиональный ремонт дисков и шин любой сложности.</div>
+                    </a>
+                </div>
+                <div class="col-6 col-sm-6 col-lg-4 col-xl-3 order-5">
+                    <a class="banners__item banner-5" href="/stocks/tovary-v-kredit/"
+                        style="background-image: url(/img/credit_card.png); background-color: rgb(245, 246, 251);">
+                        <div class="banners__item-title">Товары в кредит</div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex d-lg-none align-items-center justify-content-between">
+                    <div>Присоединяйтесь к нашим сообществам в социальных сетях:</div>
+                    <div>
+                        <a class="ico-vk" href="https://vk.com/sibirkoleso1" target="_blank"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="store">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-lg-1">
+                    <div class="black_line"></div>
+                </div>
+                <div class="col-12 col-lg-3 left_block">
+                    <h4 class="store__header" rel="nofollow">
+                        Наши магазины
+                    </h4>
+                    <p>
+                        Найти ближайшие магазины в&nbsp;Москве на&nbsp;карте<br>
+                        Единая справочная: <a href="tel:+78007751050">8 800 775-10-50</a>
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 d-none d-lg-block">
+                    <div class="gray_line"></div>
+                </div>
+                <div class="col-12 col-lg-3 right_block">
+                    <p>
+                        <a class="store__city" href="/contacts/">Контакты</a>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 col-12">
+                    <div class="features__info">
+                        <h2>Наши<br>преимущества</h2>
+                        <p>Покупая шины и диски в Сибирь Колесо, Вы убедитесь, что сотрудничать с нами не только
+                            выгодно, но и чрезвычайно удобно. Не случайно наш интернет-магазин имеет большое количество
+                            постоянных клиентов, с которыми мы благотворно работаем вот уже много лет.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row features__items">
+                <div class="col-md-4 col-12">
+                    <div class="features__item">
+                        <div class="features__item-image">
+                            <svg data-name="Layer 1" height="68" viewBox="0 0 28.28 33.75" width="60"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M307,385.73l12.73,12.73L307,411.18l-12.73-12.73L307,385.73m0-1.41-14.14,14.14L307,412.6l14.14-14.14L307,384.31Z"
+                                    fill="#1a1a1a" transform="translate(-292.86 -378.85)"></path>
+                                <path
+                                    d="M307,388.17a1.1,1.1,0,1,1-1.1,1.1,1.1,1.1,0,0,1,1.1-1.1m0-1a2.1,2.1,0,1,0,2.1,2.1,2.1,2.1,0,0,0-2.1-2.1Z"
+                                    fill="#1a1a1a" transform="translate(-292.86 -378.85)"></path>
+                                <path d="M302,384.31a5,5,0,1,1,5,5"
+                                    style="fill: none; stroke: rgb(26, 26, 26); stroke-miterlimit: 10;"
+                                    transform="translate(-292.86 -378.85)"></path>
+                                <path d="M305.57,394.14h1.84a3,3,0,0,1,0,6h-3.81"
+                                    style="fill: none; stroke: rgb(26, 26, 26); stroke-miterlimit: 10;"
+                                    transform="translate(-292.86 -378.85)"></path>
+                                <line style="fill: none; stroke: rgb(26, 26, 26); stroke-miterlimit: 10;" x1="12.71"
+                                    x2="12.71" y1="26.53" y2="14.78"></line>
+                                <line style="fill: none; stroke: rgb(26, 26, 26); stroke-miterlimit: 10;" x1="10.74"
+                                    x2="16.57" y1="23.36" y2="23.36"></line>
+                            </svg>
+                        </div>
+                        <h3>Низкие цены</h3>
+                        <p>Мы несомненно можем похвастаться низкими ценами на нашу продукцию. Ведь мы являемся
+                            официальными диллерами производителей.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="features__item">
+                        <div class="features__item-image">
+                            <svg enable-background="new 0 0 24 31.2" fill="#1a1a1a" height="65" version="1.1"
+                                viewBox="0 0 24 31.2" width="50" x="0px" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" y="0px">
+                                <g>
+                                    <path
+                                        d="M15.5,6.8c-1.7,0-3.5,3.6-3.5,8.9c0,5.5,1.8,8.8,3.5,8.8c1.7,0,3.5-3.6,3.5-8.9 C19.1,10.3,17.2,6.8,15.5,6.8z M15.5,25.4c-2.6,0-4.5-4.2-4.5-9.8c0-5.6,1.9-9.8,4.5-9.8c2.6,0,4.5,4.2,4.5,9.8 C20,21.2,18.1,25.4,15.5,25.4z M8.1,15.6c0,5.5,1.5,10.5,4,13c0.2,0.2,0.2,0.5,0,0.7c-0.1,0.1-0.2,0.1-0.3,0.1s-0.2,0-0.3-0.1 c-2.7-2.7-4.3-7.9-4.3-13.7s1.7-11,4.3-13.7c0.2-0.2,0.5-0.2,0.7,0c0.2,0.2,0.2,0.5,0,0.7C9.6,5.1,8.1,10.1,8.1,15.6z M15.5,1H8.5 C4.3,1,1,7.5,1,15.6c0,8.1,3.4,14.6,7.5,14.6h7.1c4.1,0,7.5-6.6,7.5-14.6C23,7.5,19.7,1,15.5,1z M15.5,31.2H8.5 C3.7,31.2,0,24.3,0,15.6C0,6.9,3.7,0,8.5,0h7.1C20.3,0,24,6.9,24,15.6C24,24.3,20.3,31.2,15.5,31.2z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3>Широкий ассортимент</h3>
+                        <p>Мы представляем продукцию более 30 фирм-поставщиков товаров и их производителей. Оперативно
+                            подберем шины и диски, идеально подходящие именно Вам.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="features__item">
+                        <div class="features__item-image">
+                            <svg enable-background="new 0 0 26.9 31.2" fill="#1a1a1a" height="65" version="1.1"
+                                viewBox="0 0 26.9 31.2" width="56" x="0px" xml:space="preserve"
+                                xmlns="http://www.w3.org/2000/svg" y="0px">
+                                <g>
+                                    <path
+                                        d="M14.6,9.7c-0.2,0.1-0.4,0-0.6-0.2L13.1,8L13,9.8c0,0.2-0.2,0.4-0.4,0.5l-1.7,0.5l1.6,0.6 c0.2,0.1,0.3,0.3,0.3,0.5l-0.1,1.7l1.1-1.4c0.1-0.1,0.2-0.1,0.3-0.2c0.1,0,0.2,0,0.3,0l1.6,0.6l-0.9-1.5c-0.1-0.2-0.1-0.5,0-0.6 l1.1-1.4L14.6,9.7z M18.1,8.7L16.2,11l1.7,2.5c0.1,0.2,0.1,0.5,0,0.6c-0.1,0.1-0.2,0.1-0.3,0.2c-0.1,0-0.2,0-0.3,0l-2.8-1.1 l-1.9,2.3c-0.1,0.2-0.4,0.2-0.6,0.2c-0.2-0.1-0.3-0.3-0.3-0.5l0.1-3L9,11.1c-0.2-0.1-0.3-0.3-0.3-0.5c0-0.2,0.2-0.4,0.4-0.5 L12,9.3l0.1-3c0-0.2,0.2-0.4,0.4-0.5c0.2-0.1,0.4,0,0.6,0.2l1.6,2.5l2.9-0.8c0.2-0.1,0.4,0,0.6,0.2C18.3,8.2,18.3,8.5,18.1,8.7z M26.6,16.4c-0.1,0.1-2.9,2.2-6.1,3c-1.7,0.5-3.5,0-5.2-0.5c-1.7-0.5-3.2-0.9-4.7-0.5c-1.1,0.3-2.2,0.9-3.4,1.8 c-0.2,0.2-0.6,0.1-0.7-0.1c-0.2-0.2-0.1-0.6,0.1-0.7c1.3-1,2.5-1.6,3.8-1.9c1.7-0.5,3.5,0,5.2,0.5c1.7,0.5,3.2,0.9,4.7,0.5 c2.5-0.7,4.7-2.1,5.5-2.6L21.9,1.4c-1,0.7-3.1,2-5.5,2.6c-1.7,0.5-3.5,0-5.2-0.5C9.5,3,7.9,2.6,6.4,3C3.9,3.6,1.8,5.8,1.1,6.4 l6.5,24.1c0.1,0.3-0.1,0.6-0.4,0.6c0,0-0.1,0-0.1,0c-0.2,0-0.4-0.1-0.5-0.4L0,6.4C0,6.2,0,6,0.1,5.9c0.1-0.1,2.7-3.1,6-4 c1.7-0.5,3.5,0,5.2,0.5C13,2.9,14.6,3.3,16.1,3c3.1-0.8,5.8-2.8,5.8-2.8C22,0,22.2,0,22.4,0c0.2,0,0.3,0.2,0.3,0.3l4.2,15.5 C26.9,16,26.9,16.3,26.6,16.4z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h3>Профессионализм</h3>
+                        <p>Наши продавцы-консультанты с удовольствием ответят на все интересующие Вас вопросы, окажут
+                            помощь в правильном подборе товара.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 col-12">
+                    <div class="info__block">
+                        <h1 class="header-border">Сибирь-Колесо — купите шины и&nbsp;диски любой конфигурации
+                            в&nbsp;Новокузнецке</h1>
+                        <p>Правильно подобранные, наилучшего качества шины и диски — это залог безопасности в пути при
+                            плохой погоде, разбитых дорогах и форс-мажорных обстоятельствах. Магазинов шин в
+                            Новокузнецке множество. Но широчайший выбор и максимальную надежность предоставляет именно
+                            «Сибирь-Колесо»!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-4 offset-md-1 col-md-5 col-12">
+                    <div class="info__block">
+                        <h3 class="head-icon head-icon--0">Шины и диски в Новокузнецке</h3>
+                        <p>Мы реализиуем как летние, так и зимние шины любых размеров и конфигураций на легковые,
+                            внедорожные и грузовые авто, а также колесные диски в широком ассортименте исключительно
+                            известных мировых брендов по приемлемым ценам.</p>
+                    </div>
+                </div>
+                <div class="offset-lg-1 col-lg-4 offset-md-1 col-md-5 col-12">
+                    <div class="info__block">
+                        <h3 class="head-icon head-icon--1">Качество нашей продукции</h3>
+                        <p>Продажа шин в Новокузнецке производится с предоставлением сертификатов соответствия качества
+                            от производителя. Компания «Сибирь-Колесо» является официальным дилером и поставщиком более
+                            30 мировых брендов, производящих шины и диски.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brand">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-2 col-md-8 col-12">
+                    <h2 class="header-border">Представляем лучших<br>производителей мира</h2>
+                </div>
+            </div>
+            <div class="border-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-md-2 col-md-8">
+                            <div class="brand__nav">
+                                <button aria-label="Previous slide" class="brand__nav-item brand__nav-item_prev"
+                                    role="button"></button>
+                                <button aria-label="Next slide" class="brand__nav-item brand__nav-item_next"
+                                    role="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 brands">
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s2n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s3n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s7n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s4n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s10n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s5n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s9n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s18n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s19n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s20n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s11n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s12n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s13n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s14n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s15n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s16n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s17n.gif"></a></div>
+                    <div class="brand__item"><a href=""><img alt="" src="/img/s21n.gif"></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="d-xs-block d-sm-block d-md-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer__contacts">
+                            <h3 class="footer__phone">
+                                <a href="tel:+78007751050">8 800 775-10-50</a></h3>
+                            <p class="footer__mail">
+                                <a href="mailto:sibirkolesokuznia@mail.ru">sibirkolesokuznia@mail.ru</a></p>
+                            <p class="footer__vk float-end">
+                                <a target="_blank" href="https://vk.com/sibirkoleso1" class="ico-vk ico-vk-footer"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-md-2 col-sm-2 col-12">
+                    <ul class="footer__menu footer__menu_bold">
+                        <li><a href="/wheels/">Шины</a></li>
+                        <li><a href="/tyres/">Диски</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10 col-sm-10 col-12 d-none d-md-block">
+                    <div class="footer__contacts">
+                        <h3 class="footer__phone">
+                            <a href="tel:+78007751050">8 800 775-10-50</a></h3>
+                        </h3>
+                        <p class="footer__mail">
+                            <a href="mailto:sibirkolesokuznia@mail.ru">sibirkolesokuznia@mail.ru</a></p>
+                        </p>
+                        <p class="footer__vk">
+                            <a target="_blank" href="https://vk.com/sibirkoleso1" class="ico-vk ico-vk-footer"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-12">
+                    <div class="footer__info">
+                        <h6>© 2022 Сибирь-Колесо, все права защищены.</h6>
+                        <h6>Информация на сайте — не является публичной офертой, согласно ст. №437 Гражданского кодекса
+                            РФ. Цены действительны при заказе с сайте. Товар резервируется на сутки после поступления на
+                            склад. Цена актуальна в течении суток.</h6>
+                        <p><img src="/img/footer-img.png" alt=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <aside aria-hidden="true" id="sidebar" class="sidebar">
+        <section class="cart">
+            <div class="sidebar__header">
+                <div class="cart__title">Корзина</div>
+                <svg class="cart__close">
+                    <svg id="close" width="16" height="16" viewBox="0 0 16 16">
+                        <path class="close" d="M227,61l-7,7,7,7-1,1-7-7-7,7-1-1,7-7-7-7,1-1,7,7,7-7Z"
+                              transform="translate(-211 -60)" />
+                    </svg>
+
+                </svg>
+            </div>
+            <div class="sidebar__body">
+                <div class="cart__body">
+                    <div class="cart__item">
+                        <div class="cart__item-body">
+                            <div class="row no-gutters">
+                                <div class="col-3 col-sm-2">
+                                    <a href="/tyres/943945/" class="cart__item-img" title="PS-01 99T"
+                                       style="background-image: url(/img/tyre.jpg);"></a>
+                                </div>
+                                <div class="col-9 col-sm-6"><a href="/tyres/943945/"
+                                                               class="cart__item-name"><strong>Triangle</strong> <span
+                                        span="cart__item-title">PS-01 99T</span></a>
+                                    <div class="cart__item-params">215 / 60 / R16</div>
+                                </div>
+                                <div class="offset-3 offset-sm-0 col-9 col-sm-4 text-sm-end">
+                                    <div class="cart__item-rassrochka">
+                                    </div>
+                                    <div class="cart__item-price"><span>23&nbsp;180</span> ₽
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters m-t-15">
+                                <div class="offset-3 offset-sm-2 col-7 col-sm-7">
+                                    <div aria-label="hidden" class="cart__item-counter"><a class="minus"></a> <a
+                                            class="plus"></a> <span class="count">4</span> шт
+                                    </div>
+                                </div>
+                                <div class="col-1 col-sm-3 text-end">
+                                    <div title="Удалить из корзины" class="cart__item-trash">
+                                        <svg xmlns="http://www.w3.org/2000/svg" id="trash" width="13" height="13"
+                                             viewBox="0 0 13 13">
+                                            <path class="trash"
+                                                  d="M209,229v9a1,1,0,0,1-1,1h-7a1,1,0,0,1-1-1v-9h-2v-1h4v-1a1.081,1.081,0,0,1,1-1h3a1.137,1.137,0,0,1,1,1v1h4v1h-2Zm-3-2h-3v1h3v-1Zm2,3a1,1,0,0,0-1-1h-5a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1v-7Zm-2,2h1v3h-1v-3Zm-2,0h1v3h-1v-3Zm-2,0h1v3h-1v-3Z"
+                                                  transform="translate(-198 -226)" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item-message">
+
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="sidebar__footer cart__footer">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-2 order-md-1"><button class="wild">Оформление заказа</button>
+                        </div>
+                        <div class="col-12 col-md-6 order-1 order-md-2 text-md-end">
+                            <div class="cart__total">
+                                Итог: <strong>23&nbsp;180</strong> ₽
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+    <aside aria-hidden="true" id="sidebar__sub" class="sidebar__sub">
+        <div class="order__fader"></div>
+        <section class="order">
+            <div class="sidebar__header">
+                <div class="title">Оформление заказа</div>
+                <svg class="close" id="close" width="16" height="16" viewBox="0 0 16 16">
+                    <path class="close" d="M227,61l-7,7,7,7-1,1-7-7-7,7-1-1,7-7-7-7,1-1,7,7,7-7Z"
+                          transform="translate(-211 -60)" />
+                </svg>
+            </div>
+            <div id="order" class="sidebar__body">
+                <div class="order-form">
+                    <!---->
+                    <div class="h6">Ваши данные:</div>
+                    <!---->
+                    <div class="row">
+                        <div class="col-12 col-sm-8">
+                            <div class="text-input-wrapper">
+                                <div class="text-input">
+                                    <input type="text" placeholder="Имя" class="text-input-field">
+                                </div>
+                            </div>
+                            <div class="text-input-wrapper">
+                                <div class="text-input"><input type="email" placeholder="E-Mail"
+                                                               class="text-input-field">
+                                </div>
+                            </div>
+                            <div class="text-input-wrapper">
+                                <div class="text-input"><input type="tel" placeholder="Телефон"
+                                                               class="text-input-field">
+                                </div>
+                            </div>
+                            <div class="text-input-wrapper"><label class="label"><input type="checkbox"
+                                                                                        class="checkbox"> <span>Оформить как юридическое лицо</span></label></div>
+                        </div>
+                    </div>
+                    <div class="m-b-40"></div>
+                    <div class="h6">Доставка:</div>
+                    <ul class="m-b-40 list-inline labelist labelist-b delivery-list">
+                        <li><label class="active"><input type="radio" class="tab-input" value="3">
+                            Самовывоз
+                        </label></li>
+                    </ul>
+                    <div class="tab-content">
+                        <!---->
+                        <ul class="radio-list">
+                            <li><input checked name="location" id="pickup_4235" type="radio" value="Кондомское шоссе, 6а"> <label
+                                    for="pickup_4235">Кондомское шоссе, 6а</label></li>
+                            <li><input name="location" id="pickup_4236" type="radio" value="Кузнецкое шоссе, 27"> <label
+                                    for="pickup_4236">Кузнецкое шоссе, 27</label></li>
+                        </ul>
+                        <!---->
+                    </div>
+                    <div class="m-b-40"></div>
+                    <div class="h6">Оплата:</div>
+                    <ul class="m-b-20 bttn-group labelist labelist-b">
+                        <li><label class="active"><input type="radio" class="tab-input" value="2"> <span
+                                class="icon size_24"><i class="ico"><svg class="payment1" xmlns="http://www.w3.org/2000/svg" id="payment1" width="18" height="12" viewBox="0 0 18 12">
+  <path class="payment1" d="M238,237h-1v1a1,1,0,0,1-1,1H222a1,1,0,0,1-1-1v-8a1,1,0,0,1,1-1h1v-1a1.076,1.076,0,0,1,1-1h14a1.149,1.149,0,0,1,1,1v8A1.275,1.275,0,0,1,238,237Zm-3,1a1,1,0,0,0,1-1v-1l-2,2h1Zm-13-1a1,1,0,0,0,1,1h1l-2-2v1Zm0-2,3,3h8l3-3v-2l-3-3h-8l-3,3v2Zm14-3v-1a1,1,0,0,0-1-1h-1Zm-13-2a1,1,0,0,0-1,1v1l2-2h-1Zm15-1a1,1,0,0,0-1-1H225a1,1,0,0,0-1,1h12a1.053,1.053,0,0,1,1,1v6a1.349,1.349,0,0,0,1-1v-6Zm-9,2a3,3,0,1,1-3,3A3,3,0,0,1,229,231Zm0,5a2,2,0,1,0-2-2A2,2,0,0,0,229,236Z" transform="translate(-221 -227)"/>
+</svg></i>
+                                    При получении заказа
+                                </span></label></li>
+                        <li><label class="active"><input type="radio" class="tab-input" value="2"> <span
+                                class="icon size_24"><i class="ico"><svg class="payment2" xmlns="http://www.w3.org/2000/svg" id="payment2" width="14" height="16" viewBox="0 0 14 16">
+  <path class="payment2" d="M262,240H250a1,1,0,0,1-1-1V225a1,1,0,0,1,1-1h8l5,5v10A1,1,0,0,1,262,240Zm-4-14v2a1,1,0,0,0,1,1h2Zm4,4h-5v-5h-6a1,1,0,0,0-1,1v12a1,1,0,0,0,1,1h10a1,1,0,0,0,1-1v-8Zm-1.5,8h-9a0.5,0.5,0,0,1,0-1h9A0.5,0.5,0,0,1,260.5,238Zm0-2h-9a0.5,0.5,0,0,1,0-1h9A0.5,0.5,0,0,1,260.5,236Zm0-2h-9a0.5,0.5,0,0,1,0-1h9A0.5,0.5,0,0,1,260.5,234Zm-7.5-2h-1v-1h-1v-1h1v-4h2a1.274,1.274,0,0,1,1,1v1a1.315,1.315,0,0,1-1,1h-1v1h2v1h-2v1Zm0.5-4a0.5,0.5,0,1,0-.5-0.5A0.5,0.5,0,0,0,253.5,228Z" transform="translate(-249 -224)"/>
+</svg></i>
+                                    Безналичный
+                                </span></label></li>
+                        <li><label class=""><input type="radio" class="tab-input" value="4"> <span
+                                class="icon size_24"><i class="ico"><svg class="payment3" xmlns="http://www.w3.org/2000/svg" id="payment3" width="15" height="15" viewBox="0 0 15 15">
+  <path class="payment3" d="M287,237a1,1,0,0,1,1,1v1a1,1,0,0,1-1,1H274a1,1,0,0,1-1-1v-1a1,1,0,0,1,1-1h1v-6h-2v-2l2-4h11l2,4v2h-2v6h1Zm-11-11-2,4h13l-2-4h-9Zm0,5v6h1v-6h-1Zm2,0v6h1v-6h-1Zm2,0v6h1v-6h-1Zm2,0v6h1v-6h-1Zm2,0v6h1v-6h-1Zm1,7H274.5a0.5,0.5,0,0,0,0,1h12a0.5,0.5,0,0,0,0-1H285Z" transform="translate(-273 -225)"/>
+</svg></i>
+                                    Кредит
+                                </span></label></li>
+                        <li><label class=""><input type="radio" class="tab-input" value="5"> <span
+                                class="icon size_24"><i class="ico"><svg class="payment4" xmlns="http://www.w3.org/2000/svg" id="payment4" width="18" height="12" viewBox="0 0 18 12">
+  <path class="payment4" d="M315,240H299a1,1,0,0,1-1-1V229a1,1,0,0,1,1-1h16a1,1,0,0,1,1,1v10A1,1,0,0,1,315,240Zm0-8H300v-1h15v-1a1,1,0,0,0-1-1H300a1,1,0,0,0-1,1v8a1,1,0,0,0,1,1h14a1,1,0,0,0,1-1v-6Zm-1.5,6h-2a0.5,0.5,0,0,1,0-1h2A0.5,0.5,0,0,1,313.5,238Zm0-2h-6a0.5,0.5,0,0,1,0-1h6A0.5,0.5,0,0,1,313.5,236Zm-10,2a1.455,1.455,0,0,0-2,0,1.5,1.5,0,0,1,0-3,1.455,1.455,0,0,0,2,0A1.5,1.5,0,0,1,303.5,238Zm-2-2a0.5,0.5,0,1,0,.5.5A0.5,0.5,0,0,0,301.5,236Zm2,0a0.5,0.5,0,1,0,.5.5A0.5,0.5,0,0,0,303.5,236Z" transform="translate(-298 -228)"/>
+</svg></i>
+                                    Банковская карта
+                                </span></label></li>
+                        <li><label class=""><input type="radio" class="tab-input" value="6"> <span
+                                class="icon size_24"><i class="ico"><svg class="payment6" xmlns="http://www.w3.org/2000/svg" id="payment5" width="13" height="13" viewBox="0 0 13 13">
+<path d="M3.5 7C3.77614 7 4 6.77614 4 6.5C4 6.25454 3.82312 6.05039 3.58988 6.00806L3.5 6H2.5C2.22386 6 2 6.22386 2 6.5C2 6.77614 2.22386 7 2.5 7H3.5ZM10.5 7C10.7761 7 11 6.77614 11 6.5C11 6.25454 10.8231 6.05039 10.5899 6.00806L10.5 6H9.5C9.22386 6 9 6.22386 9 6.5C9 6.77614 9.22386 7 9.5 7H10.5ZM7.5 6C7.77614 6 8 6.22386 8 6.5C8 6.74546 7.82312 6.94961 7.58988 6.99194L7.5 7H5.5C5.22386 7 5 6.77614 5 6.5C5 6.22386 5.22386 6 5.5 6H7.5ZM10.5 8C10.7761 8 11 8.22386 11 8.5C11 8.74546 10.8231 8.94961 10.5899 8.99194L10.5 9H8.5C8.22386 9 8 8.77614 8 8.5C8 8.22386 8.22386 8 8.5 8H10.5ZM10.5 10C10.7761 10 11 10.2239 11 10.5C11 10.7455 10.8231 10.9496 10.5899 10.9919L10.5 11H8.5C8.22386 11 8 10.7761 8 10.5C8 10.2239 8.22386 10 8.5 10H10.5ZM6.5 8C6.74546 8 6.94961 8.17688 6.99194 8.41012L7 8.5V10.5C7 10.7761 6.77614 11 6.5 11C6.22386 11 6 10.7761 6 10.5V8.5C6 8.22386 6.22386 8 6.5 8ZM12 0C12.5523 0 13 0.447715 13 1V12C13 12.5523 12.5523 13 12 13H1C0.447715 13 0 12.5523 0 12V1C0 0.447715 0.447715 0 1 0H12ZM12 1H1V12H12V1ZM4.5 8C4.77614 8 5 8.22386 5 8.5V10.5C5 10.7761 4.77614 11 4.5 11H2.5C2.22386 11 2 10.7761 2 10.5V8.5C2 8.22386 2.22386 8 2.5 8H4.5ZM4 9H3V10H4V9ZM6.5 2C6.74546 2 6.94961 2.17688 6.99194 2.41012L7 2.5V4.5C7 4.77614 6.77614 5 6.5 5C6.22386 5 6 4.77614 6 4.5V2.5C6 2.22386 6.22386 2 6.5 2ZM4.5 2C4.77614 2 5 2.22386 5 2.5V4.5C5 4.77614 4.77614 5 4.5 5H2.5C2.22386 5 2 4.77614 2 4.5V2.5C2 2.22386 2.22386 2 2.5 2H4.5ZM10.5 2C10.7761 2 11 2.22386 11 2.5V4.5C11 4.77614 10.7761 5 10.5 5H8.5C8.22386 5 8 4.77614 8 4.5V2.5C8 2.22386 8.22386 2 8.5 2H10.5ZM4 3H3V4H4V3ZM10 3H9V4H10V3Z"/>
+</svg>></i>
+                                    QR-код (СБП)
+                                </span></label></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="icon size_24"><i class="ico top"><svg class="info24" xmlns="http://www.w3.org/2000/svg" id="info24" width="20" height="20" viewBox="0 0 20 20">
+                            <path class="info24" d="M336,242a10,10,0,1,1,10-10A10,10,0,0,1,336,242Zm0-19a9,9,0,1,0,9,9A9,9,0,0,0,336,223Zm0,14a1,1,0,1,1,1-1A1,1,0,0,1,336,237Zm0-3a1,1,0,0,1-1-1v-5a1,1,0,0,1,2,0v5A1,1,0,0,1,336,234Z" transform="translate(-326 -222)"/>
+                        </svg></i>
+                            <div>Вы можете оплатить заказ при получении товара наличными или с помощью банковских карт:
+                                Visa / Mastercard.</div>
+                        </div>
+                    </div>
+                    <div class="m-b-50"></div>
+                    <div class="text-input"><textarea rows="1" placeholder="Комментарий к заказу"
+                                                      class="text-input-field"></textarea>
+                    </div>
+                    <div class="m-b-40"></div>
+                    <div class="sidebar__footer">
+                        <div class="row">
+                            <div class="col-12 col-md-6 order-2 order-md-1"><button disabled="disabled"
+                                                                                    class="wide">Оформление заказа</button></div>
+                            <div class="col-12 col-md-6 order-1 order-md-2 text-md-end">
+                                <div class="cart__total">
+                                    Итог: <strong>23&nbsp;180</strong> ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <div class="fader fader_menu"></div>
+    <div class="fader fader_sidebar"></div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+    <script>
+        let filterType = 'tyres'
+    </script>
+    <script src="/js/main.js"></script>
+    <script src="/js/filter.js"></script>
+    <script>
+        $('.brands').slick({
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: false,
+            draggable: false,
+            swipe: false,
+            responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                },
+                {
+                    breakpoint: 641,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 321,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        })
+
+        $('.brand__nav-item_prev').on('click', function () {
+            $('.brands').slick('slickPrev')
+        })
+
+        $('.brand__nav-item_next').on('click', function () {
+            $('.brands').slick('slickNext')
+        })
+    </script>
+</body>
+
+</html>

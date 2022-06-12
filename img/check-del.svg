@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+    <defs>
+        <style>
+            .cls-1 {
+            fill: #fff;
+            fill-rule: evenodd;
+            }
+        </style>
+    </defs>
+    <path id="Check-Del" class="cls-1" d="M326,64l-4,4,4,4-1,1-4-4-4,4-1-1,4-4-4-4,1-1,4,4,4-4Z" transform="translate(-316 -63)"/>
+</svg>

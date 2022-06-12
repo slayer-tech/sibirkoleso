@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "TI501 102T",
+    "porting": "3x98",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "1000 Miglia",
+    "img": "/img/wheel.jpg",
+    "price": 2999,
+    "count": 419
+  },
+  {
+    "id": 2,
+    "name": "LS-01 104/102Q",
+    "porting": "4x98",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "AERO",
+    "img": "/img/wheel.jpg",
+    "price": 3999,
+    "count": 253
+  },
+  {
+    "id": 3,
+    "name": "Я-245 с/к",
+    "porting": "4x98",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "Borbet",
+    "img": "/img/wheel.jpg",
+    "price": 4999,
+    "count": 150
+  },
+  {
+    "id": 4,
+    "name": "TI503 103T",
+    "porting": "4x100",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "CB",
+    "img": "/img/wheel.jpg",
+    "price": 2999,
+    "count": 419
+  },
+  {
+    "id": 5,
+    "name": "TI502 104T",
+    "porting": "4x107.95",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "HARP",
+    "img": "/img/wheel.jpg",
+    "price": 2999,
+    "count": 419
+  },
+  {
+    "id": 6,
+    "name": "Z510 2T",
+    "porting": "4x107.95",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "Yamato",
+    "img": "/img/wheel.jpg",
+    "price": 3444,
+    "count": 50
+  },
+  {
+    "id": 6,
+    "name": "Z510 2T",
+    "porting": "4x98",
+    "diameter": 13,
+    "width": 4,
+    "gab": 2,
+    "dia": 58,
+    "brand": "Yamato",
+    "img": "/img/wheel.jpg",
+    "price": 3444,
+    "count": 50
+  }
+]

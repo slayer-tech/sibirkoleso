@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "porting": "3x98",
+    "diameter": "12",
+    "width": "4.0",
+    "gab": "4.5",
+    "dia": "1.2 TFSI",
+    "brand": "1.2 TFSI"
+  },
+  {
+    "id": 2,
+    "porting": "4x98",
+    "diameter": "13",
+    "width": "1.2 TFSI",
+    "gab": "1.2 TFSI",
+    "dia": "1.2 TFSI",
+    "brand": "1.2 TFSI"
+  },
+  {
+    "id": 3,
+    "porting": "4x107.95",
+    "diameter": "14",
+    "width": "1.2 TFSI",
+    "gab": "1.2 TFSI",
+    "dia": "1.2 TFSI",
+    "brand": "1.2 TFSI"
+  }
+]

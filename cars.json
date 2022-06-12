@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "mark": "Audi",
+    "model": "A1 (8X1, 8XF)",
+    "year": "2010-2022",
+    "modification": "1.2 TFSI"
+  },
+  {
+    "id": 2,
+    "mark": "Audi",
+    "model": "A1 Sportback (8XA, 8XK)",
+    "year": "2011-2022",
+    "modification": "1.4 TFSI"
+  }
+]
