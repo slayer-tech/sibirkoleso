@@ -147,7 +147,7 @@ body.noscroll {
     top: 2px;
     left: 0;
     opacity: 0;
-    background-image: url(../img/close-active.svg);
+    background-image: url(/sibirkoleso/img/close-active.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -532,35 +532,35 @@ body.noscroll {
 }
 
 .filter__type-list label.icon-car {
-    background-image: url(../img/car.svg);
+    background-image: url(/sibirkoleso/img/car.svg);
 }
 
 .filter__type-list label.icon-truck {
-    background-image: url(../img/truck.svg);
+    background-image: url(/sibirkoleso/img/truck.svg);
 }
 
 .filter__type-list label.icon-moto {
-    background-image: url(../img/moto.svg);
+    background-image: url(/sibirkoleso/img/moto.svg);
 }
 
 .filter__type__list li input[type=radio]:checked+label.icon-car,
 .filter__type__list li label:active.icon-car,
 .filter__type__list li label:focus.icon-car,
 .filter__type__list li label:hover.icon-car {
-    background-image: url(../img/car-active.svg);
+    background-image: url(/sibirkoleso/img/car-active.svg);
 }
 .filter__type__list li input[type=radio]:checked+label.icon-truck,
 .filter__type__list li label:active.icon-truck,
 .filter__type__list li label:focus.icon-truck,
 .filter__type__list li label:hover.icon-truck {
-    background-image: url(../img/truck-active.svg);
+    background-image: url(/sibirkoleso/img/truck-active.svg);
 }
 
 .filter__type__list li input[type=radio]:checked+label.icon-moto,
 .filter__type__list li label:active.icon-moto,
 .filter__type__list li label:focus.icon-moto,
 .filter__type__list li label:hover.icon-moto {
-    background-image: url(../img/moto-active.svg);
+    background-image: url(/sibirkoleso/img/moto-active.svg);
 }
 
 
@@ -606,12 +606,12 @@ body.noscroll {
 .filter__item-list input[type=radio]:checked+label {
     border-bottom: 1px solid #fff;
     color: #fff;
-    background: #ff5200 url(../img/check-ok.svg) right 20px center no-repeat;
+    background: #ff5200 url(/sibirkoleso/img/check-ok.svg) right 20px center no-repeat;
 }
 
 .filter__item-list input[type=checkbox]:checked+label:hover,
 .filter__item-list input[type=radio]:checked+label:hover {
-    background: #ff854d url(../img/check-del.svg) right 21px center no-repeat;
+    background: #ff854d url(/sibirkoleso/img/check-del.svg) right 21px center no-repeat;
 }
 
 .filter__item:hover .filter__item-title {
@@ -738,7 +738,7 @@ body.noscroll {
     border-radius: 2px;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-image: url(../img/vk.svg);
+    background-image: url(/sibirkoleso/img/vk.svg);
     background-color: #e6e6e6;
 }
 
@@ -801,11 +801,11 @@ body.noscroll {
 }
 
 .banners__item.banner-2 .banners__item-title:after {
-    background: url(../img/arrow-right-white.svg) no-repeat 50%;
+    background: url(/sibirkoleso/img/arrow-right-white.svg) no-repeat 50%;
 }
 
 .banners__item.banner-5 .banners__item-title:after {
-    background: url(../img/arrow-right-green.svg) no-repeat 50%;
+    background: url(/sibirkoleso/img/arrow-right-green.svg) no-repeat 50%;
 }
 
 .banners__item-title {
@@ -867,7 +867,7 @@ body.noscroll {
 .store__city {
     margin: 0;
     padding-left: 24px;
-    background: url(../img/address.svg) no-repeat 0;
+    background: url(/sibirkoleso/img/address.svg) no-repeat 0;
     font-size: 13px;
     color: #1a1a1a;
     text-decoration: none;
@@ -877,7 +877,7 @@ body.noscroll {
 }
 
 .store__city:hover {
-    background: url(../img/address-hover.svg) no-repeat 0;
+    background: url(/sibirkoleso/img/address-hover.svg) no-repeat 0;
 }
 
 /* FEATURES */
@@ -951,11 +951,11 @@ body.noscroll {
 }
 
 .head-icon--0:before {
-    background: url(../img/head-icon-1.svg);
+    background: url(/sibirkoleso/img/head-icon-1.svg);
 }
 
 .head-icon--1:before {
-    background: url(../img/head-icon-2.svg);
+    background: url(/sibirkoleso/img/head-icon-2.svg);
 }
 
 /* BRAND */
@@ -1012,22 +1012,22 @@ body.noscroll {
 }
 
 .brand__nav-item_next:hover {
-    background-image: url(../img/next-active.svg);
+    background-image: url(/sibirkoleso/img/next-active.svg);
 }
 
 .brand__nav-item_prev:hover {
-    background-image: url(../img/prev-active.svg);
+    background-image: url(/sibirkoleso/img/prev-active.svg);
 }
 
 .brand__nav-item_prev {
     border-radius: 4px 0 0 4px;
-    background-image: url(../img/prev.svg);
+    background-image: url(/sibirkoleso/img/prev.svg);
 }
 
 .brand__nav-item_next {
     left: -1px;
     border-radius: 0 4px 4px 0;
-    background-image: url(../img/next.svg);
+    background-image: url(/sibirkoleso/img/next.svg);
 }
 
 .brand__item {
@@ -1160,7 +1160,7 @@ input[type=checkbox]+label span {
 
 input[type=checkbox]:checked+label span {
     background-color: #ff5200;
-    background-image: url(../img/checked.svg);
+    background-image: url(/sibirkoleso/img/checked.svg);
 }
 
 .catalog {
@@ -1514,7 +1514,7 @@ input[type=checkbox]:checked+label span {
 
 .cart__item-message:before {
     content: "";
-    background: url(../img/arrow-up.png) no-repeat 0 0;
+    background: url(/sibirkoleso/img/arrow-up.png) no-repeat 0 0;
     position: absolute;
     top: 0;
     left: 103px;
@@ -1727,7 +1727,7 @@ input[type=checkbox]:checked+label span {
     right: 0;
     color: #fff;
     text-align: center;
-    background-image: url(../img/checked.svg);
+    background-image: url(/sibirkoleso/img/checked.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-color: #ff5201;
@@ -1814,7 +1814,7 @@ input[type=checkbox]:checked+label span {
 }
 
 .radio-list input:checked {
-    background: url(../img/check-ok.svg) 50% no-repeat #ff5200;
+    background: url(/sibirkoleso/img/check-ok.svg) 50% no-repeat #ff5200;
 }
 
 .radio-list input {
@@ -1939,7 +1939,7 @@ input[type=checkbox]:checked+label span {
     position: absolute;
     left: 50%;
     top: 50%;
-    background: url(../img/logo.svg) no-repeat 50% 50%;
+    background: url(/sibirkoleso/img/logo.svg) no-repeat 50% 50%;
     background-size: contain;
     margin: -14px 0 0 -14px;
     animation-name: spin;
@@ -2197,7 +2197,7 @@ input[type=checkbox]:checked+label span {
         height: 50px;
         cursor: pointer;
         padding: 15px 40px 15px 15px;
-        background: url(../img/arrow-grey.svg) no-repeat right 20px center;
+        background: url(/sibirkoleso/img/arrow-grey.svg) no-repeat right 20px center;
     }
 
     .filter__item {

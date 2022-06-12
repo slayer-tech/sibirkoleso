@@ -8,7 +8,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "1000 Miglia",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 2999,
     "count": 419
   },
@@ -21,7 +21,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "AERO",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 3999,
     "count": 253
   },
@@ -34,7 +34,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "Borbet",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 4999,
     "count": 150
   },
@@ -47,7 +47,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "CB",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 2999,
     "count": 419
   },
@@ -60,7 +60,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "HARP",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 2999,
     "count": 419
   },
@@ -73,7 +73,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "Yamato",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 3444,
     "count": 50
   },
@@ -86,7 +86,7 @@
     "gab": 2,
     "dia": 58,
     "brand": "Yamato",
-    "img": "img/wheel.jpg",
+    "img": "/sibirkoleso/img/wheel.jpg",
     "price": 3444,
     "count": 50
   }
