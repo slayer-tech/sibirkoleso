@@ -77,42 +77,42 @@ function func(selector, inputName, catalogBlock, filterType) {
 
                         if (empty) {
                             $.ajax({
-                                url: "/sibirkoleso//sibirkoleso/porting.json",
+                                url: "/sibirkoleso/porting.json",
                                 success: data => {
                                     $(".filter__item-list.porting").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.porting'), 'porting')
                                 }
                             })
                             $.ajax({
-                                url: "/sibirkoleso//sibirkoleso/diameters.json",
+                                url: "/sibirkoleso/diameters.json",
                                 success: data => {
                                     $(".filter__item-list.diameter").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.diameter'), 'diameter')
                                 }
                             })
                             $.ajax({
-                                url: "/sibirkoleso//sibirkoleso/width-wheel.json",
+                                url: "/sibirkoleso/width-wheel.json",
                                 success: data => {
                                     $(".filter__item-list.width").html("")
                                     fillFilterItem(data.sort(), $('.row.wheels .filter__item-list.width'), 'width')
                                 }
                             })
                             $.ajax({
-                                url: "/sibirkoleso//sibirkoleso/gab.json",
+                                url: "/sibirkoleso/gab.json",
                                 success: data => {
                                     $(".filter__item-list.gab").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.gab'), 'gab')
                                 }
                             })
                             $.ajax({
-                                url: "/sibirkoleso//sibirkoleso/dia.json",
+                                url: "/sibirkoleso/dia.json",
                                 success: data => {
                                     $(".filter__item-list.dia").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.dia'), 'dia')
                                 }
                             })
                             $.ajax({
-                                url: "/sibirkoleso//sibirkoleso/brand-wheel.json",
+                                url: "/sibirkoleso/brand-wheel.json",
                                 success: data => {
                                     $(".filter__item-list.brand").html("")
                                     fillFilterItem(data, $('.row.wheels .filter__item-list.brand'), 'brand')
@@ -246,7 +246,7 @@ function func(selector, inputName, catalogBlock, filterType) {
             }
             else {
                 $.ajax({
-                    url: '/sibirkoleso//sibirkoleso/data.json',
+                    url: '/sibirkoleso/data.json',
                     success: (data) => {
                         let width = new Set()
                         let height = new Set()
