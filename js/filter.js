@@ -230,7 +230,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                         history.replaceState(null, null,  `/sibirkoleso/${filterType}.html` + parameters)
                         filterTitle.html(
                             text +
-                            "<img alt=\"\" class=\"filter__type-img\" src=\"/img/arrow.svg\">"
+                            "<img alt=\"\" class=\"filter__type-img\" src=\"img/arrow.svg\">"
                         )
                         if(filterTitle.text() != 'Легковые авто') {
                             filterSeasons.find(".row").removeClass('active')
@@ -361,7 +361,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                         history.replaceState(null, null, `/sibirkoleso/${filterType}.html` + parameters)
                         filterTitle.html(
                             text +
-                            "<img alt=\"\" class=\"filter__type-img\" src=\"/img/arrow.svg\">"
+                            "<img alt=\"\" class=\"filter__type-img\" src=\"img/arrow.svg\">"
                         )
                         if (filterTitle.text() != 'Легковые авто') {
                             filterSeasons.find(".row").removeClass('active')

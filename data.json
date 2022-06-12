@@ -9,7 +9,7 @@
     "season": 1,
     "spike": false,
     "type": 1,
-    "img": "/img/tyre.jpg",
+    "img": "img/tyre.jpg",
     "price": 2999,
     "count": 419
   },
@@ -23,7 +23,7 @@
     "season": null,
     "spike": false,
     "type": 2,
-    "img": "/img/tyre.jpg",
+    "img": "img/tyre.jpg",
     "price": 3999,
     "count": 253
   },
@@ -37,7 +37,7 @@
     "season": null,
     "spike": false,
     "type": 3,
-    "img": "/img/tyre.jpg",
+    "img": "img/tyre.jpg",
     "price": 4999,
     "count": 150
   },
@@ -51,7 +51,7 @@
     "season": 2,
     "spike": true,
     "type": 1,
-    "img": "/img/tyre.jpg",
+    "img": "img/tyre.jpg",
     "price": 2999,
     "count": 419
   },
@@ -65,7 +65,7 @@
     "season": 1,
     "spike": false,
     "type": 1,
-    "img": "/img/tyre.jpg",
+    "img": "img/tyre.jpg",
     "price": 2999,
     "count": 419
   },
@@ -79,7 +79,7 @@
     "season": 1,
     "spike": false,
     "type": 1,
-    "img": "/img/tyre.jpg",
+    "img": "img/tyre.jpg",
     "price": 3444,
     "count": 50
   }
