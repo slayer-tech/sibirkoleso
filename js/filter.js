@@ -230,7 +230,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                         history.replaceState(null, null,  `/sibirkoleso/${filterType}.html` + parameters)
                         filterTitle.html(
                             text +
-                            "<img alt=\"\" class=\"filter__type-img\" src=\"img/arrow.svg\">"
+                            "<img alt=\"\" class=\"filter__type-img\" src=\"/sibirkoleso/img/arrow.svg\">"
                         )
                         if(filterTitle.text() != 'Легковые авто') {
                             filterSeasons.find(".row").removeClass('active')
@@ -319,7 +319,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                             selector.off("click")
                             selector = $('.filter .row:not(.cars) input[type="radio"]:not(:checked)+label, .filter .row:not(.cars) input[type="checkbox"]+label')
                             selector.on("click", func(selector, inputName, catalogBlock, filterType))
-                        }, 500)
+                        }, 1500)
 
                         let parameters = "/"
 
@@ -361,7 +361,7 @@ function func(selector, inputName, catalogBlock, filterType) {
                         history.replaceState(null, null, `/sibirkoleso/${filterType}.html` + parameters)
                         filterTitle.html(
                             text +
-                            "<img alt=\"\" class=\"filter__type-img\" src=\"img/arrow.svg\">"
+                            "<img alt=\"\" class=\"filter__type-img\" src=\"/sibirkoleso/img/arrow.svg\">"
                         )
                         if (filterTitle.text() != 'Легковые авто') {
                             filterSeasons.find(".row").removeClass('active')
